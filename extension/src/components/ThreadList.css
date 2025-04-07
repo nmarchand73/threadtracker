@@ -1,0 +1,138 @@
+.thread-list {
+  width: 100%;
+}
+
+.thread-list h2 {
+  font-size: 16px;
+  margin: 0 0 15px;
+  color: var(--secondary-color);
+}
+
+.thread-filters {
+  display: flex;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+.filter-button {
+  background: none;
+  border: none;
+  padding: 5px 12px;
+  margin-right: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--secondary-color);
+}
+
+.filter-button:hover {
+  background-color: rgba(0, 120, 212, 0.1);
+}
+
+.filter-button.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.threads {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.thread-item {
+  background-color: var(--white);
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s;
+}
+
+.thread-item:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+}
+
+.thread-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.status-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status-active {
+  background-color: var(--success-color);
+}
+
+.status-stalled {
+  background-color: var(--warning-color);
+}
+
+.status-resolved {
+  background-color: var(--success-color);
+  opacity: 0.5;
+}
+
+.thread-subject {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  flex: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.thread-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.thread-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.thread-action-button {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--secondary-color);
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.thread-action-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.thread-action-button.follow-up {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.thread-action-button.follow-up:hover {
+  background-color: #0069bd;
+}
+
+.loading-threads,
+.error-message,
+.empty-threads {
+  text-align: center;
+  padding: 30px 15px;
+  color: var(--secondary-color);
+  font-size: 14px;
+} 

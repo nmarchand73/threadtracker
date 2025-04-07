@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "ThreadTracker",
+  "version": "1.0.0",
+  "description": "Track and manage email threads in Outlook Web",
+  "icons": {
+    "16": "icon16.svg",
+    "48": "icon48.svg",
+    "128": "icon128.svg"
+  },
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icon16.svg",
+      "48": "icon48.svg",
+      "128": "icon128.svg"
+    },
+    "default_title": "ThreadTracker"
+  },
+  "background": {
+    "scripts": ["browser-polyfill.js", "background.js"]
+  },
+  "permissions": [
+    "storage",
+    "notifications",
+    "identity",
+    "*://*.outlook.com/*",
+    "*://*.office365.com/*",
+    "*://*.office.com/*"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "threadtracker@example.com",
+      "strict_min_version": "57.0"
+    }
+  }
+} 
